@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="nes.css">
+
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="jiangzhehu.js"></script>
+    <title>江浙沪菜餐厅</title>
+</head>
+
+<body>
+    <div class="main">
+      
+      <div class="container">
+        <div class="header">
+            <h2>上海吃饭地图</h2>
+            <div id="content"></div>
+            <script>headOutput()</script>
+          </div>
+          
+          <div class="row">
+            <div class="column side">
+              <div class="nes-container is-centered">
+                
+                <div class="span">导航</div>
+                <a class="nes-btn" href="/html programs/homework/region/gangyue.html">港粤</a>
+                <br/><br/>
+                <a class="nes-btn" href="/html programs/homework/region/jiangzhehu.html">江浙沪</a>
+                <br/><br/>
+                <a class="nes-btn" href="/html programs/homework/region/chuanxiang.html">川湘</a>
+                <br/><br/>
+                <a class="nes-btn" href="/html programs/homework/region/lucai.html">鲁菜</a>
+                <br/><br/>
+                <a class="nes-btn" href="/html programs/homework/region/dongbei.html">东北</a>
+                <br/><br/>
+                <a class="nes-btn" href="/html programs/homework/region/xibei.html">西北</a>
+                <br/><br/>
+                <a class="nes-btn" href="/html programs/homework/region/yazhou.html">亚洲</a>
+                <br/><br/>
+                <a class="nes-btn" href="/html programs/homework/region/oumei.html">欧美</a>
+              </div>
+            </div>
+            <div class="column middle">
+              <div class="nes-container is-centered top">
+                <span class="nes-text is-primary top">江浙沪菜餐厅
+                </span>
+                
+              </div>
+              
+              <div class="nes-container with-title">
+                <span class="title" id="title1"></span>
+                <span id="score1"></span><br><br>
+                <span id="location1"></span><br><br>
+                <script>bodyOutput1()</script>
+                <div class="nes-field">
+                  <label for="score_field">若要重新打分，请输入分数后点击按钮</label>
+                  <input type="text" id="score_field1" class="nes-input">
+                </div>
+                <button type="button" class="nes-btn is-primary" onclick="reScore1()">我要打分</button>
+              </div>
+              <br>
+              <div class="nes-container with-title">
+                <span class="title" id="title2"></span>
+                <span id="score2"></span><br><br>
+                <span id="location2"></span><br><br>
+                <script>bodyOutput2()</script>
+                <div class="nes-field">
+                  <label for="score_field">若要重新打分，请输入分数后点击按钮</label>
+                  <input type="text" id="score_field2" class="nes-input">
+                </div>
+                <button type="button" class="nes-btn is-primary" onclick="reScore2()">我要打分</button>
+              </div>
+              <br>
+              <div class="nes-container with-title">
+                <span class="title" id="title3"></span>
+                <span id="score3"></span><br><br>
+                <span id="location3"></span><br><br>
+                <script>bodyOutput3()</script>
+                <div class="nes-field">
+                  <label for="score_field">若要重新打分，请输入分数后点击按钮</label>
+                  <input type="text" id="score_field3" class="nes-input">
+                </div>
+                <button type="button" class="nes-btn is-primary" onclick="reScore3()">我要打分</button>
+              </div>
+             
+            </div>
+            
+          </div>
+          
+          <div class="footer">
+            <p>这是由lanbaiwan为了解决群友hlhd问题，而建立的查询上海饭店的小工具。<br>
+              在使用本工具此查找饭店的同时，也请您协助完善内容。
+              </p>
+          </div>
+    </div>
+    </div>
+    <dialog class="nes-dialog" id="dialog-success">
+      <form method="dialog">
+        <p class="title">状态：</p>
+        <p>您已成功修改</p>
+        <menu class="dialog-menu">
+          <button class="nes-btn is-primary" id="confirmBtn">确认</button>
+        </menu>
+      </form>
+    </dialog>
+    </body>
+</html>

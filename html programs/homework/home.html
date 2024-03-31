@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="nes.css">
+
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="login.js"></script>
+    <title>首页</title>
+</head>
+
+<body>
+  
+    <div class="main">
+      
+      <div class="container">
+        
+        <div class="header">
+            <h2>上海吃饭地图</h2>
+            <div id="content"></div>
+            <script>headOutput()</script>
+          </div>
+          
+          <div class="row">
+            <div class="column side">
+              <div class="nes-container is-centered">
+                
+                <div class="span">导航</div>
+                <button type="button" class="nes-btn" onclick="gangyueOutput()">港粤</button>
+                <br/><br/>
+                <button type="button" class="nes-btn" onclick="jiangzhehuOutput()">江浙沪</button>
+                <br/><br/>
+                <button type="button" class="nes-btn" onclick="chuanxiangOutput()">川湘</button>
+                <br/><br/>
+                <button type="button" class="nes-btn" onclick="lucaiOutput()">鲁菜</button>
+                <br/><br/>
+                <button type="button" class="nes-btn" onclick="dongbeiOutput()">东北</button>
+                <br/><br/>
+                <button type="button" class="nes-btn" onclick="xibeiOutput()">西北</button>
+                <br/><br/>
+                <button type="button" class="nes-btn" onclick="yazhouOutput()">亚洲</button>
+                <br/><br/>
+                <button type="button" class="nes-btn" onclick="oumeiOutput()">欧美</button>
+              </div>
+            </div>
+            <div class="column middle">
+              <div class="nes-container is-centered top">
+                <span class="nes-text is-primary top">首页<br/>
+                  Let's 干饭
+                </span>
+                
+              </div>
+              <div class="nes-container with-title">
+                <span class="title">使用说明</span>
+                <span class="nes-text is-success" id="help"></span>
+                <script>helpOutput()</script>
+              </div>
+              <br>
+              <div class="nes-container with-title">
+                <span class="title">饭店数量统计数据</span>
+                港粤：3<br>
+                江浙沪：3<br>
+                川湘：3<br>
+                鲁菜：3<br>
+                东北：2<br>
+                西北：3<br>
+                日韩：3<br>
+                欧美：4<br>
+              </div>
+            </div>
+            
+          </div>
+          
+          <div class="footer">
+            <p>这是由lanbaiwan为了解决群友hlhd问题，而建立的查询上海饭店的小工具。<br>
+              在使用本工具此查找饭店的同时，也请您协助完善内容。
+              </p>
+          </div>
+    </div>
+    </div>
+    <dialog class="nes-dialog" id="dialog-islogin">
+      <form method="dialog">
+        <p class="title">状态：</p>
+        <p>您还未登录</p>
+        <menu class="dialog-menu">
+          <button class="nes-btn" id="cancelBtn">返回</button>
+          <button class="nes-btn is-primary" id="confirmBtn">确认</button>
+        </menu>
+      </form>
+    </dialog>
+    </body>
+
+</html>
