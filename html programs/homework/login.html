@@ -8,7 +8,10 @@
 
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/md5.min.js"></script>
     <script type="text/javascript" src="login.js"></script>
+    
+    
     <title>登录</title>
 </head>
 
@@ -57,10 +60,15 @@
                 <input type="password" id="password_field" class="nes-input-password">
               </div>
               <br>
-              <button type="button" class="nes-btn is-primary" onclick="checkLogin()">登录</button>
+              <button type="button" class="nes-btn is-primary" onclick="encryption()+checkLogin()">登录</button>
               <a class="nes-btn is-error" href="/html programs/homework/home.html">返回</a>
             </div>
           </form>
+          <script>
+            function encryption(){
+              password_field.value = md5(password_field.value);
+            }
+          </script>
           </div>
           <dialog class="nes-dialog" id="dialog-success">
             <form method="dialog">
@@ -99,6 +107,7 @@
         </menu>
       </form>
     </dialog>
+    
     </body>
 
 </html>

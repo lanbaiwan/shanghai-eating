@@ -1,3 +1,4 @@
+
 var isLogin=false;
 var username="";
 
@@ -24,11 +25,13 @@ if(getCookie("username")){
 }
 username=getCookie("username");
 
+
+
 function checkLogin() { 
 	var name=document.getElementById("name_field").value;
 	var pass=document.getElementById("password_field").value;
-	if ((name==="lbw" && pass==="123456")||(name==="xln" && pass==="123456")||(name==="kb" && pass==="123456")
-  ||(name==="tlx" && pass==="123456")||(name==="pkq" && pass==="123456")||(name==="temper" && pass==="123456")||(name==="admin" && pass==="123456")) {  
+	if ((name==="lbw" && pass==="e10adc3949ba59abbe56e057f20f883e")||(name==="xln" && pass==="e10adc3949ba59abbe56e057f20f883e")||(name==="kb" && pass==="e10adc3949ba59abbe56e057f20f883e")
+  ||(name==="tlx" && pass==="e10adc3949ba59abbe56e057f20f883e")||(name==="pkq" && pass==="e10adc3949ba59abbe56e057f20f883e")||(name==="temper" && pass==="e10adc3949ba59abbe56e057f20f883e")||(name==="admin" && pass==="e10adc3949ba59abbe56e057f20f883e")) {  
 		const dialog = document.getElementById('dialog-success');
     const cancelBtn = document.getElementById('cancelBtn');
     const confirmBtn = document.getElementById('confirmBtn');
