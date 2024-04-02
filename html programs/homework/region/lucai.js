@@ -2,7 +2,7 @@ var username="";
 let restraurant=[
     {id:"sijiminfuwaibaiduqiao",chineseid:"四季民福（外白渡桥）",score:[0,0,0,0,0,0,0],average:0,location:"虹口区吴淞路130号城控股大厦辅楼彩虹北三层"},
     {id:"qingniangongshebinguguangchang",chineseid:"青年公社（缤谷广场）",score:[0,0,0,0,0,0,0],average:0,location:"长宁区天山路341号缤谷广场西座4楼"},
-    {id:"nanmenshuanrou",chineseid:"南门涮肉",score:[0,0,0,0,0,0,0],average:0,location:"？"}
+    {id:"nanmenshuanrou",chineseid:"南门涮肉",score:[0,0,0,0,0,0,0],average:0,location:"黄浦区四川中路166号"}
 ]
 
 for(var i=0;i<restraurant.length;i++){

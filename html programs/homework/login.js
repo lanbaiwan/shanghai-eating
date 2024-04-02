@@ -42,7 +42,7 @@ function checkLogin() {
     confirmBtn.addEventListener('click', () => {
       dialog.close();
       isLogin=true;
-      setCookie("username",name,30);
+      setCookie("username",name,300);
       window.location.href="home.html"; 
     });
 	}
